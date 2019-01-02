@@ -9,7 +9,7 @@ class TestDNN(chainer.Chain):
         with self.init_scope():
             self.layer0 = L.Linear(None, 10)
             self.layer1 = L.Linear(10, 10)
-            self.layer2 = L.Linear(10, 1)
+            self.layer2 = L.Linear(10, 25)
 
     def forward(self, x):
         LF = Layers()
